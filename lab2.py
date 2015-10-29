@@ -17,6 +17,7 @@ entered. A legal value is any integer.
 
 """
 
+<<<<<<< HEAD
 def enter_value():
     no_of_sides = raw_input("Number of sides:")
     a=0
@@ -37,6 +38,8 @@ def enter_value():
 
 
 
+=======
+>>>>>>> benevolentprof/master
 def name_that_shape():
     """
     For a given number of sides in a regular polygon, returns the shape name
@@ -58,7 +61,11 @@ def name_that_shape():
 
     """
 
+<<<<<<< HEAD
     sides = enter_value()
+=======
+    sides = int(raw_input("Number of sides:"))
+>>>>>>> benevolentprof/master
 
     if sides == 3:
         print("triangle")

@@ -71,10 +71,14 @@ def test_unexpected_input():
 
     try:
         assert days_in_month("123")
-        assert days_in_month("abcd")
-        assert days_in_month(1234)
     except ValueError:
         return True
+
+    try:
+        assert days_in_month(123)
+    except AssertionError:
+        return True
+    
 
 
 # Hint: use a try/except block to deal with the exception
